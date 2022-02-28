@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Cart UI</title>
+    <link rel="stylesheet" type="text/css" href="./css/shopping-cart.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900"
+      rel="stylesheet"
+    />
+    <!--link for CSS Sheet-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/utilis.css" />
+    <link rel="stylesheet" href="./css/respnsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.png" style="width: 28%" />
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./FAQs.html">FAQs</a></li>
+          <li><a href="./services.html">Services</a></li>
+        </ul>
+        <div class="input">
+          <input
+            type="text"
+            class="searchBar"
+            placeholder="Search Products Here..."
+          /><button><i class="fa fa-search"></i></button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="CartContainer">
+      <div class="Header1">
+        <h3 class="Heading1">Shopping Cart</h3>
+        <h5 class="Action1">Remove all</h5>
+      </div>
+
+      <div class="Cart-Items1">
+        <div class="image-box">
+          <img src="./img/citem1.jfif" style="width: 200px; height: 120px" />
+        </div>
+        <div class="about1">
+          <h1 class="title1">Black Kobra</h1>
+          <h3 class="subtitle1">size:8.5</h3>
+        </div>
+        <div class="counter1">
+          <div class="btn1">+</div>
+          <div class="count1">2</div>
+          <div class="btn1">-</div>
+        </div>
+        <div class="prices1">
+          <div class="amount1">$2.99</div>
+          <div class="remove1">
+            <button style="font-size: 24px">
+              <i class="fa fa-trash-o"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="Cart-Items1 pad1">
+        <div class="image-box1">
+          <img src="./img/fitem4.jpg" style="width: 200px; height: 120px" />
+        </div>
+        <div class="about1">
+          <h1 class="title1">Jogers</h1>
+          <h3 class="subtitle1">size:9</h3>
+        </div>
+        <div class="counter1">
+          <div class="btn1">+</div>
+          <div class="count1">1</div>
+          <div class="btn1">-</div>
+        </div>
+        <div class="prices1">
+          <div class="amount1">$3.19</div>
+          <div class="remove1">
+            <button style="font-size: 24px">
+              <i class="fa fa-trash-o"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="checkout1">
+        <div class="total1">
+          <div>
+            <div class="Subtotal1">Sub-Total</div>
+            <div class="items1">2 items</div>
+          </div>
+          <div class="total-amount1">$6.18</div>
+        </div>
+        <button class="button1">Checkout</button>
+      </div>
+    </div>
+    <hr />
+    <br />
+    <footer class="flex-all-center" style="margin-top: 240px">
+      <p>Copyright &copy; MyCart.com</p>
+      <div id="icons">
+        <a
+          href="#"
+          class="fa fa-facebook"
+          id="fa-facebook"
+          class="fa-hoverg"
+        ></a>
+        <a href="#" class="fa fa-twitter" id="fa-twitter" class="fa-hoverg"></a>
+        <a href="#" class="fa fa-google" id="fa-google" class="fa-hoverg"></a>
+        <a
+          href="#"
+          class="fa fa-linkedin"
+          id="fa-linkedin"
+          class="fa-hoverg"
+        ></a>
+        <a
+          href="#"
+          class="fa fa-instagram"
+          id="fa-instagram"
+          class="fa-hoverg"
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

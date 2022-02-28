@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQs</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/FAQs.css" />
+    <link rel="stylesheet" href="./css/utilis.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/respnsive.css" />
+    <style>
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #ccc;
+      }
+
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./img/logo.png" style="width: 28%" />
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./FAQs.html">FAQs</a></li>
+          <li><a href="./services.html">Services</a></li>
+        </ul>
+        <div class="input">
+          <input
+            type="text"
+            class="searchBar"
+            placeholder="Search Products Here..."
+          /><button><i class="fa fa-search"></i></button>
+        </div>
+      </nav>
+    </header>
+    <h2>Frequently Asked Questions(FAQs)</h2>
+
+    <button class="accordion">What payment options do I have?</button>
+    <div class="panel">
+      <p>
+        --> Cash on Delivery (available nationwide).<br />
+        --> Online payment (Visa Debit/Credit, Master Debit/Credit)
+      </p>
+    </div>
+
+    <button class="accordion">
+      Is it safe to use my credit/debit card to make payments?
+    </button>
+    <div class="panel">
+      <p>
+        All payment information on our website is processed on a fully encrypted
+        and secure platform and kept confidential with only authorized personnel
+        having access to your information.
+      </p>
+    </div>
+
+    <button class="accordion">What should I do if my payment fails?</button>
+    <div class="panel">
+      <p>
+        In case of a payment failure, make sure that the payment information you
+        have provided is accurate. If your account has been debited after a
+        payment failure, it is normally reimbursed to your bank account within 7
+        business days. You can email us on customercare@butt.com.pk or give us a
+        call on +9231111111111 with your order number for any clarification.
+      </p>
+    </div>
+
+    <button class="accordion">
+      What are the conditions for Cash on Delivery (COD)?
+    </button>
+    <div class="panel">
+      <p>
+        To avail COD, please follow these instructions.<br />
+        --> At checkout, select ‘Cash on Delivery'. <br />--> Upon the courier’s
+        arrival, check for the original receipt and pay only the amount
+        mentioned on that receipt in cash.
+      </p>
+    </div>
+
+    <button class="accordion">How can I track my order?</button>
+    <div class="panel">
+      <p>
+        You can check the status of your order on your account page. As soon as
+        your order leaves our warehouse, you can live track the rider’s progress
+        through a tracking link that will be sent to you via email and SMS once
+        your order is dispatched.
+      </p>
+    </div>
+    <button class="accordion">Do I need an account to place an order?</button>
+    <div class="panel">
+      <p>
+        You do not need to create an account to place an order. You can checkout
+        as guest without creating an account. However, we highly encourage you
+        to create an account. Account creation will allow you to track your
+        order at any time and also significantly enhance your checkout
+        experience so you don’t have to fill out your information every time.
+      </p>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <footer class="flex-all-center" style="margin-top: 155px">
+      <p>Copyright &copy; MyCart.com</p>
+      <div id="icons">
+        <a
+          href="#"
+          class="fa fa-facebook"
+          id="fa-facebook"
+          class="fa-hoverg"
+        ></a>
+        <a href="#" class="fa fa-twitter" id="fa-twitter" class="fa-hoverg"></a>
+        <a href="#" class="fa fa-google" id="fa-google" class="fa-hoverg"></a>
+        <a
+          href="#"
+          class="fa fa-linkedin"
+          id="fa-linkedin"
+          class="fa-hoverg"
+        ></a>
+        <a
+          href="#"
+          class="fa fa-instagram"
+          id="fa-instagram"
+          class="fa-hoverg"
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

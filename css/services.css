@@ -1,0 +1,31 @@
+.back-pic {
+  width: 1200px;
+
+  background-repeat: no-repeat;
+  margin-left: 50px;
+}
+.back-pic p {
+  font-size: 70px;
+  color: white;
+  padding: 100px;
+}
+
+.notes {
+  padding: 20px 200px;
+  text-align: center;
+  color: rgb(23, 126, 223);
+}
+
+.notes p {
+  padding: 20px;
+}
+
+.sample {
+  display: flex;
+}
+.sample1 img {
+  width: 300px;
+}
+.sample1 {
+  padding: 0px 50px;
+}

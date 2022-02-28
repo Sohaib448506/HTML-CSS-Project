@@ -1,0 +1,15 @@
+.flex-all-center {
+  display: flex;
+  padding-left: 50px;
+  align-items: center;
+}
+
+.up-button {
+  margin-left: 880px;
+  align-items: right;
+}
+.up-button button:hover {
+  background-color: rgb(19, 114, 202);
+  color: aliceblue;
+  border: 1px solid white;
+}
